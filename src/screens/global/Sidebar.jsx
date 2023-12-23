@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import {Sidebar as ProSidebar, Menu, MenuItem} from 'react-pro-sidebar';
 import {Box, IconButton, Typography, useTheme} from '@mui/material';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import {tokens} from '../../theme';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined';
@@ -14,10 +14,11 @@ const Item = ({title, to, icon, selected, setSelected}) => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode)
     return (
-        <MenuItem active={selected === title} style={{color: colors.primary[300]}} onClick={() => setSelected(title)} icon={icon}>
+        <Link to={to} style={{textDecoration: "none"}}> 
+            <MenuItem active={selected === title} style={{color: colors.primary[300]}} onClick={() => setSelected(title)} icon={icon}>
             <Typography>{title}</Typography>
-            <Link to={to}/>
-        </MenuItem>
+            </MenuItem>   
+        </Link>
     )
 }
 
