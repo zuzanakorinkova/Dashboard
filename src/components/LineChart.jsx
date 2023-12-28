@@ -57,7 +57,7 @@ const LineChart = ({isDashboard = false}) => {
         axisTop={null}
         axisRight={null}
         axisBottom={{
-            tickSize: 5,
+            tickSize: 0,
             tickPadding: 5,
             tickRotation: 0,
             legend: isDashboard ? undefined : "transportation",
@@ -66,7 +66,7 @@ const LineChart = ({isDashboard = false}) => {
         }}
         axisLeft={{
             tickValues: 5,
-            tickSize: 5,
+            tickSize: 0,
             tickPadding: 5,
             tickRotation: 0,
             legend: isDashboard ? undefined : "count",
@@ -75,11 +75,8 @@ const LineChart = ({isDashboard = false}) => {
         }}
         enableGridX={false}
         enableGridY={false}
-        pointSize={10}
-        pointColor={{ theme: 'background' }}
-        pointBorderWidth={1}
-        pointBorderColor={{ from: 'serieColor' }}
-        pointLabelYOffset={-16}
+        pointSize={0}
+        pointBorderWidth={0}
         useMesh={true}
         legends={[
             {
@@ -88,12 +85,12 @@ const LineChart = ({isDashboard = false}) => {
                 justify: false,
                 translateX: 100,
                 translateY: 0,
-                itemsSpacing: 0,
+                itemsSpacing: 20,
                 itemDirection: 'left-to-right',
                 itemWidth: 80,
                 itemHeight: 20,
-                itemOpacity: 0.75,
-                symbolSize: 12,
+                itemOpacity: 0.85,
+                symbolSize: 30,
                 symbolShape: 'circle',
                 symbolBorderColor: 'rgba(0, 0, 0, .5)',
                 effects: [

@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import {Sidebar as ProSidebar, Menu, MenuItem} from 'react-pro-sidebar';
 import {Box, IconButton, Typography, useTheme} from '@mui/material';
-import {Link, NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {tokens} from '../../theme';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined';
@@ -31,8 +31,11 @@ const Sidebar = () => {
     return (
         <Box
         sx={{
+            "& .ps-sidebar-container": {
+                backgroundColor: `${colors.primary[800]} !important`
+            },
             "& .pro-sidebar-inner": {
-                backgroundColor: `${colors.primary[400]} !important`
+                backgroundColor: `${colors.primary[800]} !important`
             },
             "& .pro-icon-wrapper": {
                 backgroundColor: `transparent !important`
@@ -40,11 +43,14 @@ const Sidebar = () => {
             "& .pro-inner-item": {
                 padding: `5px 35px 5px 20px !important`
             },
-            "& .pro-inner-item:hover": {
-                color: `#868dfb !important`
+            "& .ps-menu-button": {
+                color: `${colors.primary[300]} !important`,
             },
-            "& .pro-menu-item.active": {
-                color: `#6870fa !important`
+            "& .ps-menu-button:hover": {
+                backgroundColor: `${colors.gray[300]} !important`
+            },
+            "& .ps-menu-button.ps-active": {
+                color: `${colors.primary[500]} !important`
             },
         }}
         >

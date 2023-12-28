@@ -94,7 +94,7 @@ const BarChart = ({isDashboard}) => {
         axisTop={null}
         axisRight={null}
         axisBottom={{
-            tickSize: 5,
+            tickSize: 0,
             tickPadding: 5,
             tickRotation: 0,
             legend: isDashboard ? undefined : "country",
@@ -103,7 +103,7 @@ const BarChart = ({isDashboard}) => {
             truncateTickAt: 0
         }}
         axisLeft={{
-            tickSize: 5,
+            tickSize: 0,
             tickPadding: 5,
             tickRotation: 0,
             legend: isDashboard ? undefined : "food",
