@@ -8,8 +8,6 @@ import React, { useState } from "react";
 import Output from "../../components/Output";
 
 
-
-
 const Dashboard = () => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
@@ -106,8 +104,6 @@ const Dashboard = () => {
                     )}
                 </Box>
             </Box>
-           
-           
     </Box>
         )
 
