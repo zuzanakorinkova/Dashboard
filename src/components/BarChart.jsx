@@ -38,8 +38,8 @@ const BarChart = ({isDashboard}) => {
         }}
         data={data}
         keys={[
-            'hot dog',
-            'burger',
+            'sales',
+            'total',
      
         ]}
         indexBy="country"

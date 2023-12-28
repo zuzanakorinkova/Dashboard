@@ -77,7 +77,7 @@ const LineChart = ({isDashboard = false}) => {
         enableGridY={false}
         pointSize={0}
         pointBorderWidth={0}
-        useMesh={true}
+        useMesh={false}
         legends={[
             {
                 anchor: 'bottom-right',
@@ -92,16 +92,7 @@ const LineChart = ({isDashboard = false}) => {
                 itemOpacity: 0.85,
                 symbolSize: 30,
                 symbolShape: 'circle',
-                symbolBorderColor: 'rgba(0, 0, 0, .5)',
-                effects: [
-                    {
-                        on: 'hover',
-                        style: {
-                            itemBackground: 'rgba(0, 0, 0, .03)',
-                            itemOpacity: 1
-                        }
-                    }
-                ]
+                symbolBorderColor: colors.primary[500],
             }
         ]}
     />
