@@ -1,6 +1,6 @@
 
 
-# Visit life app [Here](https://magnificent-croquembouche-5ae085.netlify.app)
+# Visit life Dashboard [here](https://magnificent-croquembouche-5ae085.netlify.app)
 
 
 # Getting Started with Create React App
