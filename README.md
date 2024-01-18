@@ -1,6 +1,5 @@
 
-
-# Visit life Dashboard [here](https://magnificent-croquembouche-5ae085.netlify.app)
+# Visit live Dashboard [here](https://magnificent-croquembouche-5ae085.netlify.app)
 
 
 # Getting Started with Create React App
